@@ -1,0 +1,88 @@
+.grid {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -12px;
+    margin-top: 20px;
+}
+
+.col_3 {
+    width: 25%;
+    padding: 0px 12px;
+}
+
+.container {
+    padding: 22px 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+}
+
+.container_icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.users {
+    background-color: oklch(93.2% 0.032 255.585);
+    color: oklch(54.6% 0.245 262.881);
+}
+
+.cart {
+    background-color: oklch(96.2% 0.044 156.743);
+    color: oklch(62.7% 0.194 149.214);
+}
+
+.revenue {
+    background-color: oklch(94.6% 0.033 307.174);
+    color: oklch(55.8% 0.288 302.321);
+}
+
+.visit {
+    background-color: oklch(97.3% 0.071 103.193);
+    color: oklch(68.1% 0.162 75.834);
+}
+
+.container_info {
+
+    h2 {
+        margin: 8px 0px;
+    }
+
+    .title {
+        color: oklch(55.1% 0.027 264.364);
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 14px;
+        color: oklch(70.7% 0.022 261.325);
+        
+        span {
+            margin-right: 6px;
+        }
+
+        .red {
+            color: oklch(63.7% 0.237 25.331);
+        }
+
+        .green {
+            color: oklch(72.3% 0.219 149.579);
+        }
+        
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}

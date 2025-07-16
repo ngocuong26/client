@@ -1,0 +1,57 @@
+.announce, .announce_err {
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 20px;
+        border-radius: 5px;
+        position: fixed;
+        top: 60px;
+        right: 10px;
+        animation: fadeIn 0.5s ease;
+        transition: all ease;
+        box-shadow: var(--box-shadow);
+        z-index: 100;
+        display: flex;
+
+        .icon {
+            font-size: 20px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 13px;
+            color: #9e9c9c;
+        }
+    }
+
+.announce {
+    border-left: 4px solid #28a745;
+
+    .icon {
+        color: var(--color-success);
+    }
+}
+
+.announce_err {
+    border-left: 4px solid var(--color-confirm);
+
+    .icon {
+        color: var(--color-confirm);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(calc(100% + 10px));
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

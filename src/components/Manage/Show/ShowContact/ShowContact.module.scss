@@ -1,0 +1,136 @@
+.row {
+    margin: 0px -14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_3 {
+    width: 25%;
+    padding: 0px 14px;
+}
+
+.container_contact {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+
+    .reflied {
+
+        span {
+            display: inline-block;
+            background-color: oklch(96.2% 0.044 156.743);
+            color: oklch(44.8% 0.119 151.328);
+            border-radius: 50px;
+            font-size: 14px;
+            padding: 4px 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pending {
+
+        span {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: oklch(93.6% 0.032 17.717);
+            color: oklch(44.4% 0.177 26.899);
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact_text {
+        height: 60px;
+        overflow: hidden;
+    }
+
+    strong {
+        margin-top: 16px;
+        display: block;
+    }
+
+    .btn_refly {
+        padding: 8px 24px;
+        background-color: var(--color-confirm);
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+    }
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+.container_show {
+    background-color: #fff;
+    color: #444;
+    z-index: 20;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 500px;
+
+    p {
+        text-wrap: wrap;
+    }
+
+    button {
+        padding: 8px 20px;
+        // display: flex;
+        // margin: auto;
+        border-radius: 5px;
+    }
+
+    .refly {
+        background-color: var(--color-confirm);
+        color: #fff;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+    }
+
+    .cancel_btn {
+        background-color: #eee;
+        color: #444;
+
+        &:hover {
+            background-color: var(--color-cancel);
+            color: #fff;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 200px;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}

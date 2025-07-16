@@ -1,0 +1,23 @@
+.container_edit_news {
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        margin-top: 20px;
+    }
+    
+    input {
+        padding: 8px 20px;
+        background-color: #fff;
+    }
+    
+    textarea {
+        height: 300px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+    }
+}

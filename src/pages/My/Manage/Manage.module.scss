@@ -1,0 +1,234 @@
+.container_manage {
+    display: flex;
+    margin-top: 20px;
+    flex: 1;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+
+.menu {
+    margin-right: 40px;
+
+    button {
+        padding: 10px 22px;
+        display: block;
+        border-radius: 5px;
+        min-width: 160px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+}
+
+.container_info {
+    width: 100%;
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    border: 1px solid #ccc;
+}
+
+.container_order, .container_order_animation {
+    width: 100%;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+
+    div {
+
+        &:first-child {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+
+        &:first-child {
+            font-weight: 600;
+        }
+    }
+}
+
+.container_order_animation {
+    // display: none;
+    animation: fadeOut 0.8s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 8px 0px;
+}
+
+.btn_delete {
+    background-color: var(--primary-color);
+    color: white;
+    width: 60px;
+    padding: 10px 0px;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    // opacity: 0.5;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    .container_confirm {
+        width: 300px;
+        // height: 200px;
+        background-color: white;
+        opacity: 1;
+        // justify-content: center;
+        // align-items: center;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px;
+
+        div {
+            display: flex;
+            justify-content: right;
+            margin-top: 30px;
+        }
+
+        .btn_delete_confirm {
+            background-color: var(--primary-color);
+            color: white;
+            margin-right: 20px;
+            align-items: right;
+        }
+
+        button {
+            padding: 8px 20px;
+            border-radius: 5px;
+
+            &:last-child {
+                background-color: #ccc;
+
+                &:hover {
+                    background-color: #8c8c8c;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.un_show {
+    display: none;
+}
+
+.btn_un_show {
+    background-color: #ccc;
+    right: 30px;
+    top: 30px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.price {
+    color: var(--primary-color);
+    display: inline-block;
+    margin-left: 12px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        h1 {
+            font-size: 24px;
+            padding: 0px 10px;
+        }
+    }
+    
+    .container_manage {
+        display: block;
+        width: 100%;
+        max-width: 480px;
+        padding: 0px 10px;
+
+        .menu {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            margin-right: 0;
+        }
+
+        .container_order {
+            // display: none;
+            span {
+
+                &:first-child {
+                    font-weight: 500;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+
+            .btn_delete {
+                min-width: auto;
+            }
+        }
+
+        .container_order, .container_order_animation {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .see_more {
+                font-size: 13px;
+                display: flex;
+                margin: auto;
+                margin: 10px auto;
+                padding: 8px 20px;
+            }
+        }
+
+        .btn {
+            padding: 8px 14px;
+            min-width: 140px;
+        }
+
+        .active {
+            min-width: 150px;
+            padding: 8px 14px;
+        }
+        
+    }
+}

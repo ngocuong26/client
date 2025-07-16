@@ -1,0 +1,17 @@
+.container_revenue {
+
+    .container_filter {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+
+        }
+
+        select {
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+    }
+}

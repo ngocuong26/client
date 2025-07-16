@@ -1,0 +1,137 @@
+.btn_add {
+    display: block;
+    background-color: var(--color-confirm);
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--btn-hover);
+    }
+}
+
+.cate_btn {
+    padding: 8px 20px;
+    background-color: #ccc;
+    display: block;
+    min-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    &:hover {
+        background-color: var(--color-cancel);
+        color: #fff;
+    }
+}
+
+.container_cate {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease;
+    margin-right: 50px;
+}
+
+.container_child, .container_child_edit {
+    position: absolute;
+    right: -140%;
+    top: 48%;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    min-width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    transform: translateY(-50%);
+
+    p {
+        background-color: #ddd;
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+    
+    .items {
+        margin-bottom: 20px;
+    }
+
+    button {
+        display: flex;
+        justify-self: center;
+        background-color: var(--color-confirm);
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+    }
+}
+
+.container_child_edit {
+    // margin-left: 100px;
+    // position: absolute;
+    
+    .add {
+        background-color: #eee;
+        border: 2px dashed #ccc;
+        color: #ccc;
+        text-align: center;
+        font-size: 16px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    input {
+        padding: 8px 20px;
+        background-color: #ddd;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .save {
+        background-color: var(--color-confirm);
+    }
+
+    .cancel {
+        background-color: #ccc;
+        color: black;
+
+        &:hover {
+            background-color: var(--color-cancel);
+            color: #fff;
+        }
+    }
+}
+
+.container_items {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    p {
+        width: 100%;
+    }
+
+    .icon {
+        margin-left: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

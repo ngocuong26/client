@@ -1,0 +1,147 @@
+.container {
+    width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    width: 100%;
+    // margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.row_contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col_2 {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.col_3 {
+    width: 33.3333%;
+    padding: 0px 20px;
+}
+
+.col_8 {
+    width: 66.6667%;
+    padding: 0px 20px;
+}
+
+.container_img {
+    img {
+        width: 100%;
+    }
+}
+
+
+.info_user {
+    // display: flex;
+    // justify-content: space-between;
+    margin-bottom: 20px;
+    // width: 100%;
+
+    input {
+        display: block;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 10px 14px;
+        // margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+
+.content {
+    width: 100%;
+    margin-top: 20px;
+
+    input {
+        display: block;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 14px;
+        // margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .content_text {
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+.text_content {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_send {
+    justify-self: center;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    padding: 10px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 480px;
+
+        img {
+            object-fit: cover;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        .row {
+            margin: 0 -10px;
+        }
+
+        .col_3, .col_8 {
+            width: 100%;
+        }
+
+        .row_contact {
+            .col_2 {
+                width: 100%;
+            }
+            
+            .info_user {
+                margin-bottom: 14px;
+            }
+
+        }
+        .content {
+            margin-top: 14px;
+        }
+    }
+}

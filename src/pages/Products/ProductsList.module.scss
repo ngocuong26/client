@@ -1,0 +1,152 @@
+.filter {
+    text-align: right;
+    margin: 20px;
+
+    button {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 14px;
+        margin-left: 20px;
+
+        span {
+            margin: 0px 20px 0px 10px;
+        }
+    }
+}
+
+.name {
+    color: var(--primary-color);
+}
+
+.grid {
+    width: 1200px;
+}
+
+.row {
+    // width: 100%;
+    margin: 0px -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_6 {
+    width: 20%;
+    padding: 0px 10px;
+}
+
+.container_product {
+    border: 1px solid rgba(22, 24, 35, 0.03);
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 8px rgba(22, 24, 35, 0.1);
+    padding-bottom: 20px;
+    transition: 0.05s ease-in-out;
+    border-radius: 10px;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 2px 6px 8px rgba(22, 24, 35, 0.2);
+    }
+}
+
+.img {
+    width: 100%;
+    
+    img {
+        // padding-top: 100%;
+        width: 100%;
+    }
+}
+
+.info_product {
+    padding: 0px 12px;
+}
+
+.name_product {
+    font-weight: 500;
+    font-size: 16px;
+    height: 40px;
+    overflow: hidden;
+    // margin-bottom: 10px;
+}
+
+.btn_add_cart {
+    // line-height: 30;
+    font-size: 14px;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 4px;
+    display: flex;
+    justify-self: center;
+    margin-top: 14px;
+
+    span {
+        margin-left: 10px;
+        // font-weight: 600;
+    }
+}
+
+.review {
+    font-size: 11px;
+    color: #fdc040;
+}
+
+.container_list {
+    width: 1200px;
+
+    select {
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+}
+
+.container_filter {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-self: right;
+}
+
+.loading {
+    display: flex;
+    width: 100%;
+    // position: absolute;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container_list {
+        width: 100%;
+        max-width: 480px;
+
+        .container_filter {
+            padding: 0px 10px;
+
+            span {
+                display: none;
+            }
+        }
+
+        .home {
+            padding: 0px 10px;
+        }
+
+
+        .loading {
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .container_list {
+        width: 100%;
+        max-width: 960px;
+        padding: 0px 10px;
+    }
+
+}
+
