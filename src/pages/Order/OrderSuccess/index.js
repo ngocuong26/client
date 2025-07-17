@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import styles from "./OrderSuccess.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
@@ -40,7 +40,9 @@ function OrderSuccess() {
                     <p>Địa chỉ: {address}</p>
 
                     <img src={`${apiURL}/uploads/receipt.png`} className={styles.img}></img>
-                    <p className={styles.btn}>Theo dõi đơn hàng</p>
+                    <Link to='/my/manage?type=confirm'>
+                        <p className={styles.btn}>Theo dõi đơn hàng</p>
+                    </Link>
                 </div>
             </div>
         </>
