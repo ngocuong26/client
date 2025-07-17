@@ -11,6 +11,7 @@ function ShowDash() {
     const [sale, setSale] = useState('');
     const [view, setView] = useState();
     const apiURL = process.env.REACT_APP_API_URL;
+    const test_type_vist = 'up';
 
     let total_lastmonth = 0;
 
@@ -126,9 +127,9 @@ function ShowDash() {
                                 <span className={styles.title}>Visits</span>
                                 <h2>{view?.toLocaleString('en-EN')}</h2>
                                 <p>
-                                    <span className={sale === 'down' ? styles.red : styles.green}>
-                                        <FontAwesomeIcon icon={sale === 'down' ? faArrowDown : faArrowUp} className={styles.icon}/>
-                                        12%
+                                    <span className={test_type_vist === 'down' ? styles.red : styles.green}>
+                                        <FontAwesomeIcon icon={test_type_vist === 'down' ? faArrowDown : faArrowUp} className={styles.icon}/>
+                                        22%
                                     </span>
                                     so với tháng trước
                                 </p>
